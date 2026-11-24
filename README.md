@@ -1,6 +1,6 @@
 # 5-Stage Pipelined CPU (Verilog)
 
-A 32-bit pipelined processor written in structural Verilog for Duke ECE 350. It has full bypassing, load-use and multiply/divide stalls, branch/jump flushing, and arithmetic exceptions. It passes the course's full autograder test suite.
+A 32-bit pipelined processor written in structural Verilog. It has full bypassing, load-use and multiply/divide stalls, branch/jump flushing, and arithmetic exceptions. It passed ECE350's full autograder test suite.
 
 ## Design
 
@@ -32,12 +32,7 @@ A 32-bit pipelined processor written in structural Verilog for Duke ECE 350. It 
 
 `Wrapper.v`, `ROM.v`, `RAM.v` and `dffe_ref.v` come from the course skeleton. The rest is my design.
 
-## Running
-
-The code is simulated with Icarus Verilog through the ECE 350 autotester and Wrapper testbench, which are not included here. Compile all of `src/*.v` with the course `Wrapper_tb.v` and run a test program with `vvp`.
-
 ## Notes
 
 - Multdiv runs on the rising clock rather than the inverted one, which saves a cycle per operation.
 - The register file keeps one 32-bit net per register. An earlier version used a single 1024-bit vector with tristate reads and simulated far too slowly on the grader.
-- Parts of the design and debugging were done with AI assistance (Claude), which the course permits.

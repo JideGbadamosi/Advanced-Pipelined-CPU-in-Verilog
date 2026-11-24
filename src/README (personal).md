@@ -1,6 +1,6 @@
 # Processor
 ## NAME (NETID)
-Babajide Gbadamosi (bsg24)
+XXXXXXXXXXXXXBG (XXXXX)
 ## Description of Design
 oh man, this took like 18 hours. basically went through lecture 9: cpu slides and followed that mostly to the t, there were some bugs that made me have to use slightly unique logic but those slides were incredibly helpful in visualizing and executing this cpu.
 ## Bypassing
